@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Noir Moon Studio</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta name="description" content=""> <!-- ADD meta name= "keywords" web developer, responsive website, custom website, mobile friendly website, mobile first website" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Hind+Vadodara|Permanent+Marker|Plaster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap" rel="stylesheet">
+    <style> @font-face { font-family: Sinkin Sans; src: url('SinkinSans-200XLightItalic.otf'); }
+            h1 {
+              font-family: SinkinSans;
+            }
+    </style> <!-- Randrake was previous font -->
+    <script src="https://kit.fontawesome.com/a34e0731ec.js"></script>
+    <meta name="theme-color" content="#fafafa">
+
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!-- HEADER -->
+    <header>
+      <div class="header" id="myHeader">
+        <div class="content-wrapper">
+          <figure>
+            <img src="../img/nms-logo-final-black.png" alt="Noir Moon Studio Logo" />
+            <!-- <a href="img/noir-moon-studio-logo.png"><img src="" alt=" Noir Moon Studio logo"></a> -->
+          </figure>
+          <div class="header-divider">
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="../index.html" class="active">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../portfolio/index.html">Portfolio</a>
+                <a href="../services/index.html">Services</a>
+                <a href="../contact/index.html">Contact</a>
+              </div>
+
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()">Menu</span>
+          </div>
+        </div> <!-- div header content-wrapper ends -->
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="error-page">
+          <div class="hero-area">
+            <div class="content-wrapper">
+              <h1><em>OH, DARN IT!</em> <strong>404</strong></h1>
+              <h3>WE CAN'T FIND THAT WEBPAGE.</h3>
+              <input type="button" onclick="window.location.href = '../index.html';" value="Back Home"> <!-- LINK BUTTON TO HOME PAGE -->
+              <p>Sorry, this page no longer exists, never existed, or has been moved. Don't be upset, things happen.  Let's get you back on track. Feel free to take a look around Noir Moon Studio's <a href="https://www.noirmoonstudio.com/services">services</a> or <a href="https://www.noirmoonstudio.com/portfolio">portfolio</a> and turn that frown upside down.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="../js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <script>
+    /* Open when someone clicks on the span element */
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    </script>
+
+    <script>
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+
+    <script>
+
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+  </body>
+
+</html>

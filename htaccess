@@ -1,0 +1,27 @@
+#ErrorDocument 404 /404.shtml
+
+ErrorDocument 404 http://www.noirmoonstudio.com/404.html
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+
+
+# mod_rewrite begins here
+
+#RewriteEngine on
+
+# This doesn't apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in directory with .html extension
+
+#RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# This actually shows the page that has the .html extension
+
+#RewriteRule ⌃(.*)$ $1.html [NC,L] 
+
+# mod_rewrite ends here
